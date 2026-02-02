@@ -47,6 +47,7 @@ jobs:
             echo "Processing $file..."
             
             CONTENT=$(cat "$file" 2>/dev/null || echo "Error reading file")
+            echo "DEBUG: Content = $CONTENT"
             FILENAME=$(basename "$file")
             
             # Upload to Pastebin using API
